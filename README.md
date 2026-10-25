@@ -133,3 +133,4 @@ git push -u origin main
 | | | AST / semantic analysis |
 | | | GUI / bridge |
 | | | Tests / documentation / report |
+"# math-formula-compiler" 
