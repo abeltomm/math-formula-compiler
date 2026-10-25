@@ -1,0 +1,8 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    { "label": "Build compiler", "type": "shell", "command": "build.bat", "group": { "kind": "build", "isDefault": true }, "problemMatcher": ["$gcc"] },
+    { "label": "Run tests", "type": "shell", "command": "python tests/test_runner.py", "dependsOn": "Build compiler", "problemMatcher": [] },
+    { "label": "Run GUI", "type": "shell", "command": "python ui/app.py", "dependsOn": "Build compiler", "problemMatcher": [] }
+  ]
+}

@@ -1,0 +1,28 @@
+# Invalid formulas.  Format:  category | formula | fragment expected in the error message
+Syntax   | 2 + * 3          | Missing operand: unexpected operator '*'
+Syntax   | (2 + 3           | Unmatched '('
+Syntax   | 2 + 3)           | Unmatched ')'
+Semantic | sqrt()           | expects exactly 1 argument
+Semantic | pow(2)           | expects exactly 2 arguments
+Semantic | pow(2, 3, 4)     | expects exactly 2 arguments
+Semantic | unknown(5)       | Unsupported function 'unknown'
+Lexical  | 2 @ 3            | Invalid character '@'
+Syntax   | 5 +              | Missing operand: unexpected end of input
+Semantic | 3 / (2 - 2)      | Division by zero
+Lexical  | 3. + 1           | Malformed numeric literal '3.'
+Lexical  | 1.2.3            | more than one decimal point
+Lexical  | 12abc            | Malformed numeric literal '12abc'
+Lexical  | .5 + 1           | Malformed numeric literal '.5'
+Syntax   | 2 3              | Unexpected number '3'
+Syntax   | sqrt 4           | must be followed by '('
+Syntax   | pow(2,)          | Missing operand: unexpected ')'
+Syntax   | (,)              | Misplaced ','
+Syntax   | ()               | Missing operand: unexpected ')'
+Syntax   | pow(2 3)         | Expected ',' or ')'
+Syntax   | sqrt(4           | Unmatched '('
+Syntax   | * 2              | Missing operand: unexpected operator '*'
+Semantic | sqrt(-4)         | Invalid argument to sqrt()
+Semantic | Sqrt(4)          | Unsupported function 'Sqrt'
+Semantic | 1 / 0            | Division by zero
+Semantic | 0 ^ -1           | 0 raised to the negative constant
+Lexical  | x # y            | Invalid character '#'

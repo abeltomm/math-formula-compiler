@@ -1,0 +1,11 @@
+# Optional evaluation tests.  Format:  formula | variables | expected value  OR  "error: <fragment>"
+x^2 + 2*x + 1    | x=3       | 16
+sqrt(x^2 + y^2)  | x=3, y=4  | 5
+2^3^2            |           | 512
+-2^2             |           | -4
+pow(2, 3) + 5    |           | 13
+10 / y           | y=0       | error: Division by zero
+sqrt(x)          | x=-4      | error: sqrt()
+a + 1            |           | error: Undefined variable 'a'
+pow(10, 400)     |           | error: overflow
+pow(-8, 0.5)     |           | error: Domain error

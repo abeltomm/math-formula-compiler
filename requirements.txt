@@ -1,0 +1,3 @@
+# No third-party Python packages are required.
+# Tkinter ships with the standard Windows installer from python.org
+# (tick "tcl/tk and IDLE" during installation). Python 3.8+ recommended.
