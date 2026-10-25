@@ -115,15 +115,6 @@ Input `2 @ 3` → **Lexical ✗** at 1:3 (`Invalid character '@'`); syntax, AST 
 Syntax-error recovery (panic mode), more functions (`sin`, `log`), scientific notation, user-declared variables with types,
 three-address-code generation, constant folding/optimisation pass, an LR(1) table-driven parser for comparison.
 
-## Publishing to GitHub (nothing has been pushed yet)
-```
-git init
-git add .
-git commit -m "Mathematical Formula Compiler: lexer, parser, AST, semantic analysis, GUI, tests"
-git branch -M main
-git remote add origin <YOUR-REPOSITORY-URL>      # create an empty repo on github.com first
-git push -u origin main
-```
 
 ## Team contributions (fill in)
 | Member | Roll no. | Contribution |
